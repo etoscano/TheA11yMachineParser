@@ -70,7 +70,7 @@ for line in f:
             # selector = splittedLine[4]
 
             # Get WCAG guideline
-            guidelineNum = code.split(".")[3].replace("_",".")
+            guidelineNum = code.split(".")[3].replace("_",".")[:5]
 
             if guidelineNum in Database.guidelines:
                 g = Database.guidelines.get(guidelineNum)
